@@ -60,7 +60,7 @@ if uploaded_file is not None:
     st.markdown("** The Predicted Mask is **: ")
     plt.imshow(output_mask)
     #st.pyplot()
-    #plt.imshow(output_mask)
+    plt.imshow(output_mask)
    
     st.sidebar.markdown("** CO2 Emission Calculator **")
     forest_type = st.sidebar.selectbox("Please select the type of forest: ", ('Tropical Forest', 'Temperate Forest', 'Boreal Forest', 'Shrublands', 'Grasslands'))
