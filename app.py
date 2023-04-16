@@ -59,7 +59,7 @@ if uploaded_file is not None:
     output_mask = conv_float_int(combine_image(preds_t, row_num, col_num, original_width, original_height, remove_ghost=False)[:,:,0])
     st.markdown("** The Predicted Mask is **: ")
     plt.imshow(output_mask)
-    #st.pyplot()
+    st.pyplot()
     plt.imshow(output_mask)
    
     st.sidebar.markdown("** CO2 Emission Calculator **")
