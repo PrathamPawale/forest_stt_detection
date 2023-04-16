@@ -59,8 +59,8 @@ if uploaded_file is not None:
     output_mask = conv_float_int(combine_image(preds_t, row_num, col_num, original_width, original_height, remove_ghost=False)[:,:,0])
     st.markdown("** The Predicted Mask is **: ")
     plt.imshow(output_mask)
-    st.pyplot()
-    plt.imshow(output_mask)
+    st.pyplot(output_mask)
+    #plt.imshow(output_mask)
    
     st.sidebar.markdown("** CO2 Emission Calculator **")
     forest_type = st.sidebar.selectbox("Please select the type of forest: ", ('Tropical Forest', 'Temperate Forest', 'Boreal Forest', 'Shrublands', 'Grasslands'))
