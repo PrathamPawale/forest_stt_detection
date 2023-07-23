@@ -7,7 +7,7 @@ import numpy as np
 from keras import backend as K
 from tensorflow.python.lib.io import file_io
 
-from tf.keras.models import load_model
+from keras.models import load_model
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
