@@ -1,12 +1,13 @@
 import streamlit as st
+import tensorflow as tf
 import matplotlib.pyplot as plt
 from PIL import Image
 from source import preprocess_input_image, batch_predict, conv_float_int, combine_image, load_trained_model, burn_area   
 import numpy as np
-from keras import backend as K
+from tf.keras import backend as K
 from tensorflow.python.lib.io import file_io
 
-from keras.models import load_model
+from tf.keras.models import load_model
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
