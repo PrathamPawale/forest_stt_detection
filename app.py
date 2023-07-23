@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from source import preprocess_input_image, batch_predict, conv_float_int, combine_image, load_trained_model, burn_area   
 import numpy as np
-from tf.keras import backend as K
+from tensorflow.keras import backend as K
 from tensorflow.python.lib.io import file_io
 
 from tf.keras.models import load_model
