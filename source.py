@@ -1,4 +1,4 @@
-import streamlit as st
+
 import numpy as np
 from tensorflow.keras.models import load_model
 from keras import backend as K
@@ -60,8 +60,7 @@ def conv_float_int(image):
 
 def load_trained_model(model_location):
     loaded_model = load_model(model_location)
-    if "a_counter" not in st.session_state:
-      session = K.get_session()
+    session = K.get_session()
     return loaded_model, session
 
 def burn_area(output_mask, resolution, forest_type):
